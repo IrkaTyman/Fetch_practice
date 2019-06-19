@@ -30,7 +30,7 @@ function requestApi(method, url){
 
          output.results.forEach(function(item, i, array){
              let nameItem= item.name || item.title;
-             let timeItem= item.release_date|| item.first_air_date|| "" ;
+             let timeItem= item.release_date|| item.first_air_date|| "информация отсутсвует" ;
              inner +=`<div class="col-12 col-md-4 col-xl-3">${nameItem}<br/>Дата выхода:<b>${timeItem}</b></div>`;
          });//forEach запускает функцию, принимает три элемента
 
